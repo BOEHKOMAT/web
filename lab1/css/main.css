@@ -1,0 +1,281 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css");
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a::focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: "lato", sans-serif;
+  color: #fff;
+  background: #222222;
+  background: #16222A;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #16222A, #3A6073);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+input {
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  transition: background-color 0.3s;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  color: #3A3F44;
+  width: 100%;
+}
+input[type=text], input[type=password] {
+  background-color: #ffffff;
+}
+input[type=text]:focus, input[type=text]:hover, input[type=password]:focus, input[type=password]:hover {
+  background-color: #eeeeee;
+}
+input[type=submit] {
+  background-color: #00B9BC;
+  color: #3A3F44;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+input[type=submit]:focus, input[type=submit]:hover {
+  background-color: #197071;
+}
+
+.header {
+  padding-top: 10px;
+  display: block;
+}
+.header a {
+  color: lightblue;
+}
+.header .bar {
+  background: #2b3f4c;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #26343e;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .bar .info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+.header .bar .info .info-item {
+  padding: 2px 5px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+}
+.container .content .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .content .row .column {
+  position: relative;
+  width: 100%;
+}
+@media all and (min-width: 992px) {
+  .container .content .row .column.first {
+    flex: 0 0 75%;
+    max-width: 75%;
+    order: 1;
+  }
+  .container .content .row .column.second {
+    flex: 0 0 25%;
+    max-width: 25%;
+    order: 2;
+  }
+}
+@media all and (max-width: 991px) {
+  .container .content .row .column.first {
+    order: 2;
+  }
+  .container .content .row .column.second {
+    order: 1;
+  }
+}
+.container .content .row .column .drug-block {
+  position: relative;
+  flex: 1 0 20%;
+  max-width: 20%;
+  padding: 0 15px;
+}
+@media all and (max-width: 1200px) {
+  .container .content .row .column .drug-block {
+    flex: 1 0 25%;
+    max-width: 25%;
+  }
+}
+@media all and (max-width: 768px) {
+  .container .content .row .column .drug-block {
+    flex: 1 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+@media all and (max-width: 580px) {
+  .container .content .row .column .drug-block {
+    flex: 1 0 50%;
+    max-width: 50%;
+  }
+}
+@media all and (max-width: 400px) {
+  .container .content .row .column .drug-block {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+}
+.container .content .row .column .drug-block .drug {
+  background: #ffffff;
+  color: #26222a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  height: auto;
+}
+.container .content .row .column .drug-block .drug .drug-image {
+  padding: 3px;
+}
+.container .content .row .column .drug-block .drug .drug-image img {
+  border: 1px solid #26222a;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+.container .content .row .column .drug-block .drug .drug-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .content .row .column .drug-block .drug .drug-info .name {
+  padding: 3px;
+}
+.container .content .row .column .drug-block .drug .drug-info .price {
+  padding: 3px;
+}
+.container .content .row .column .drug-block .drug .drug-info .price::after {
+  content: "$";
+}
+.container .content .row .column .filters {
+  margin-bottom: 30px;
+  background: #ffffff;
+  color: #26222a;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.container .content .row .column .filters .filters-title {
+  text-align: center;
+  font-size: 24px;
+  text-decoration: underline;
+  padding: 10px 0;
+}
+.container .content .row .column .filters .filters-item {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.container .content .row .column .filters .filters-item .filter {
+  display: inline-block;
+  margin: 2px;
+  background: #3A6073;
+  color: #26222a;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.container .content .row .column .filters .filters-item .filter:focus, .container .content .row .column .filters .filters-item .filter:hover {
+  background-color: #197071;
+}

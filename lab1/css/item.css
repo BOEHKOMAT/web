@@ -1,0 +1,239 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css");
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a::focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: "lato", sans-serif;
+  color: #fff;
+  background: #222222;
+  background: #16222A;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #16222A, #3A6073);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+input {
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  transition: background-color 0.3s;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  color: #3A3F44;
+  width: 100%;
+}
+input[type=text], input[type=password] {
+  background-color: #ffffff;
+}
+input[type=text]:focus, input[type=text]:hover, input[type=password]:focus, input[type=password]:hover {
+  background-color: #eeeeee;
+}
+input[type=submit] {
+  background-color: #00B9BC;
+  color: #3A3F44;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+input[type=submit]:focus, input[type=submit]:hover {
+  background-color: #197071;
+}
+
+.header {
+  padding-top: 10px;
+  display: block;
+}
+.header a {
+  color: lightblue;
+}
+.header .bar {
+  background: #2b3f4c;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #26343e;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .bar .info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+.header .bar .info .info-item {
+  padding: 2px 5px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+}
+.container .content {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.container .content .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .content .row .column {
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+}
+@media all and (min-width: 992px) {
+  .container .content .row .column.first {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .container .content .row .column.second {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+.container .content .row .column .block {
+  display: flex;
+  color: #26222a;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+.container .content .row .column .block.left, .container .content .row .column .block.up {
+  align-items: center;
+  justify-content: center;
+}
+.container .content .row .column .block.up {
+  flex-direction: column;
+  max-height: 300px;
+}
+.container .content .row .column .block.low {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .row .column .block .block-image img {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+}
+.container .content .row .column .block .block-title {
+  font-size: 24px;
+  text-decoration: underline;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+.container .content .row .column .block .description {
+  text-align: justify;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 7px;
+}
+.container .content .row .column .block .avail {
+  color: green;
+  font-weight: bold;
+}
+.container .content .row .column .block .add img {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.container .content .row .column .block .price {
+  display: flex;
+  font-size: 20px;
+}
+.container .content .row .column .block .price::after {
+  content: "$";
+}

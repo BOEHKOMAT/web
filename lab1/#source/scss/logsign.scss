@@ -1,0 +1,79 @@
+@import "style.scss";
+@import "vars.scss";
+
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container{
+	background:rgba(58,63,68,0.5);
+	border-radius: 5px;
+	box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+	width:450px;
+	display: flex;  
+	flex-direction: column;
+	
+
+	.logo {
+		font-family: "museo-slab";  
+ 		font-size:20px;
+  		text-align: center;
+  		padding: 20px 20px 0;
+  		margin:0;
+	}
+
+	.item{
+		color: #3A3F44;
+	  	padding:25px 25px 0;
+	  	margin: 20px 20px 0;  
+		border-radius: 3px;
+
+		.form{
+
+			.form-field{
+				display: -webkit-box;
+			   display: -webkit-flex;
+			   display: -ms-flexbox;
+			   display: flex;
+			   margin-bottom: 2rem;
+			   width:100%;
+
+				.hidden{
+					border: 0;
+				   clip: rect(0 0 0 0);
+				   height: 1px;
+				   margin: -1px;
+				   overflow: hidden;
+				   padding: 0;
+				   position: absolute;
+				   width: 1px;
+				}
+				
+			}
+		}
+	}	
+
+	.hint{
+		display: flex;  
+		flex-direction: column;
+		align-items: center;  
+		border-radius: 3px;
+		padding-bottom: 20px;
+		
+		.question{
+			padding-bottom: 7px;
+		}
+	 	.link{
+			a{
+				color: $scd-bgc;
+
+				&:hover{
+					color: $prim-clr;
+				}
+			}
+		}
+	}
+}
+

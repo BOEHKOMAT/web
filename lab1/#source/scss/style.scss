@@ -1,0 +1,88 @@
+@import "nullstyle.scss";
+@import "vars.scss";
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css');
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+html{
+	height: 100%;
+}
+
+body{
+	min-height: 100%;
+	font-family: 'lato', sans-serif;
+	color: #fff;
+	background: #222222;
+	background: #16222A; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #16222A , #3A6073); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #16222A , #3A6073); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: cover;
+	background-attachment: fixed;
+	
+}
+
+input{
+	border: 0;
+	color: inherit;
+	font: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	-webkit-transition: background-color .3s;
+	transition: background-color .3s;
+
+	border-radius: 0.25rem;
+	border: 1px solid #ccc;
+	padding: 1rem;
+	color: $scd-clr;  
+	width: 100%;
+
+	&[type="text"],&[type="password"]{
+		background-color: $prim-bgc;
+		
+		&:focus, &:hover{
+			background-color: #eeeeee;
+		}
+	}
+
+	&[type="submit"]{
+		background-color: $scd-bgc;
+		color: $scd-clr;
+		font-weight: bold;
+		text-transform: uppercase;
+
+		&:focus, &:hover{
+			background-color: $prim-clr;
+		}
+	}
+}
+
+.header{
+	padding-top: 10px;
+	display: block;
+
+	a{
+		color: lightblue;
+	}
+
+	.bar{
+		background: #2b3f4c;
+		padding: 15px;
+		border-radius: 10px;
+		border: 1px solid #26343e;
+		margin-bottom: 20px;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		.general{}
+		.info{
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: auto;
+			.info-item{
+				padding: 2px 5px;
+			}
+		}
+	}
+}
